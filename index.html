@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:;">
+  <title>VALIRYAN FREEHOLD</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">VALIRYAN FREEHOLD</div>
+    <div class="subtitle">PRIVATE BROWSING • YOUR OWN DOMAIN</div>
+    <div class="controls">
+      <button id="back" title="Back">←</button>
+      <button id="forward" title="Forward">→</button>
+      <button id="home" title="Home">⌂</button>
+      <input id="address" type="text" placeholder="Search or enter address" autocomplete="off" spellcheck="false">
+      <button id="go">GO</button>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="home">
+      <div class="crest">THE FREEHOLD BROWSER</div>
+      <h1>Knowledge.<br>Without chains.</h1>
+      <p>A private-minded browser with a sovereign, customizable interface.</p>
+      <div class="grid">
+        <button data-url="https://search.brave.com/">Search<small>Brave Search</small></button>
+        <button data-url="https://www.wikipedia.org/">Explore<small>Wikipedia</small></button>
+        <button data-url="https://www.youtube.com/">Watch<small>YouTube</small></button>
+        <button data-url="https://github.com/">Build<small>GitHub</small></button>
+      </div>
+      <p class="note">Downloads save to your Downloads folder. This build does not block ads or trackers.</p>
+    </section>
+
+    <webview id="view" src="about:blank" hidden></webview>
+  </main>
+
+  <script src="renderer.js"></script>
+</body>
+</html>
